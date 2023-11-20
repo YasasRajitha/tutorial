@@ -9,7 +9,7 @@ from .serializers import ProductSerializers
 
 @api_view()
 def product_list(request):
-    return Response('OK')
+    return Response('KK')
 
 @api_view()
 def product_detail(request,id):
