@@ -15,4 +15,4 @@ def product_list(request):
 def product_detail(request,id):
     product = Product.objects.get(pk=id)
     serializer = ProductSerializers(product)
-    return Response(id)
+    return Response(serializer.data)
