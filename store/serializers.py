@@ -23,5 +23,5 @@ class ProductSerializers(serializers.Serializer):
         view_name='collection-detail'
     )
 
-    def calculate_tax(self, product:Product):123
+    def calculate_tax(self, product:Product):
         return product.unit_price * Decimal(1.1)
